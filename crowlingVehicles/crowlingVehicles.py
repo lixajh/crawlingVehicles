@@ -43,7 +43,10 @@ for link in ullist:
         data = response.json()
         ary = data['result']
         arry = ary['sellSeries']
-        filename = './crowlingVehicles/brand_json/'+li['v']+'.txt'
+        div = li.find_all('div')
+        span = div[0].find_all('span')
+        print(span[0].text)
+        filename = './crowlingVehicles/brand_json/'+span[0].text+'_'+li['v']+'.txt'
         with open(filename, 'w') as file_object:
             file_object.write(json.dumps(arry))
         # for sell in arry:
