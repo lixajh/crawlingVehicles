@@ -138,3 +138,8 @@ dmypy.json
 cython_debug/
 
 .brand_json/
+./brand_json/
+/brand_json/
+.crowlingVehicles/brand_json/
+./crowlingVehicles/brand_json/
+/crowlingVehicles/brand_json/
